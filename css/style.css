@@ -16,6 +16,7 @@ body {
 }
 
 .catalog-content h1 {
+    margin: 0;
     font-size: 35px;
     line-height: 41px;
     font-weight: bold;
@@ -27,44 +28,297 @@ body {
     font-weight: medium;
 }
 
+/* ---------------------------------- Сетка */
+
+.clearfix {
+    display: table;
+    content: "";
+    clear: both;
+} 
+
+header,
+main .main-container,
+footer {
+    margin-left: 2.3%;
+    margin-right: 2.3%;
+    min-height: 64px;   
+}
+
+.logo-container {
+    position: relative;
+    width: 154px;
+}
+
+.logo {
+    display: block;
+    position: absolute;
+    left: -5px;
+    margin-right: 15px;
+    padding-top: 10px;
+    width: 154px;
+}
+
+.main-header .container {
+    width: 100%;
+}
+
+.main-header .container .container {
+    padding-top: 22px;
+}
+
+.main-navigation {
+    float: left;
+    margin-left: 164px;
+    width: 400px;
+}
+
+.user-block {
+    float: right;
+    position: relative;
+    width: 265px;
+}
+
+.contacts {
+    position: absolute;
+    right: 40px;
+}
+
+.main-header {
+    margin-bottom: 25px;
+}
+
+/* Для главной страницы */
+
+a.btn {
+    display: block;
+    margin-bottom: 39px;
+}
+
+.wrapper {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.banner {
+    float: left;
+    width: 48.9%;
+    min-height: 220px;
+    border-radius: 15px;
+}
+
+.banner:nth-child(even) {
+    float: right;
+}
+
+.about-gllacy {
+    padding-left: 21px;
+    padding-right: 21px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+.about-gllacy .col {
+    float: left;
+    padding-left: 50px;
+    width: 491px;
+}
+
+.about-gllacy .col:nth-child(even) {
+    float: right;
+}
+
+/* Хлебные крошки */
+
+.page-title {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.container-map {
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+    height: 430px;
+}
+
+.info {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+/* Фильтры */
+
+.filters-block {
+    width: 866px;
+    margin-bottom: 32px;
+    margin-right: auto;
+}
+
+.sort {
+    float: left;
+    width: 193px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.price {
+    float: left;
+    position: relative
+    width: 218px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.fatness {
+    float: right;
+    width: 415px;
+    margin-bottom: 15px;
+}
+
+.filling {
+    clear: both;
+    width: 866px;
+}
+
+/* Каталог */
+
+.catalog {
+    width: 100%;
+    font-size: 0;
+    margin-bottom: 35px;
+}
+
+article {
+    display: inline-block;
+    vertical-align: top;
+    width: 23.35%;
+    margin-right: 2.2%;
+}
+
+article:nth-child(4n) {
+    margin-right: 0;
+}
+
+/* Пагинация */
+
+.pagination {
+    width: 100%;
+}
+
+/* Подвал */ 
+
+.main-footer {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-top: 1px solid #a9bbb1;
+}
+
+.footer-social {
+    float: left;
+    width: 267px;
+    margin-right: 2.2%;
+}
+
+.footer-info {
+    float: left;
+    width: 560px;
+    margin-right: 2.2%;
+}
+
+.footer-info .left-col {
+    float: left;
+}
+
+.footer-info .right-col {
+    float: right;
+}
+
+.footer-info::after {
+    display: table;
+    content: "";
+    clear: both;
+}
+
+.footer-copyright {
+    float: right;
+    width: 267px;
+}
+
+/* Фоны */
+
+.raspberry {
+    background-image: url("../img/raspberry-background.jpg");
+}
+
+.chocolate {
+    background-image: url("../img/chocolate-background.jpg");
+}
+
+.about-gllacy {
+    background-image: url("../img/waffle-background.jpg");
+}
+
+.blog {
+    background-image: url("../img/strawberry-background.jpg");
+}
+
+.subscribe {
+    
+}
+
+/* Карточки товаров */
+
+h3 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+}
+
+.article-title {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .undisplayed {
     display: none;
 }
 
 /* Cтили для главного меню */
 
-ul.main-menu {
-    display: block;
+.main-menu {
     margin: 10px 0;
     padding: 0;
+    font-size: 0;
     list-style: none;
 }
 
-ul.main-menu > li {
+.main-menu > li {
     display: inline-block;
     position: relative;
     margin: 0;
+    vertical-align: top;
 }
 
-ul.main-menu > li > a {
-    padding: 0px 0px;
+.main-menu > li > a {
+    padding: 0;
     margin: 13px;
     font-size: 16px;
     line-height: 18px;
     font-weight: bold;
     color: #ffffff;
     text-decoration: none;
-    border-bottom: 2px solid #adbdb4;
+    border-bottom: 1px solid #adbdb4;
 }
 
-ul.main-menu a.active {
+.main-menu a.active {
     color: #ffffff;
     background-color: #d07058;
 }
   
-ul.main-menu > li > a:hover,
-ul.main-menu > li > a:active,
-ul.main-menu > li > a.active {
+.main-menu > li > a:hover,
+.main-menu > li > a:active,
+.main-menu > li > a.active {
     padding: 8px 13px;
     margin: 0;
     color: #333333;
@@ -74,12 +328,12 @@ ul.main-menu > li > a.active {
     border-radius: 50px;
 } 
 
-ul.main-menu > li > a:active {
+.main-menu > li > a:active {
     border-top: 2px solid #696969;
     padding-top: 6px;
 }
 
-ul.main-menu > li > a.active {
+.main-menu > li > a.active {
     color: #ffffff;
     background-color: #d07058;
 }
@@ -137,11 +391,45 @@ ul.main-menu > li > a.active {
     background-color: #f6b5a5;
 }
 
-/*-----------------------------------*/
+/* Хлебные крошки */
 
-article img {
-    border-radius: 50%;
+.breadcrumbs {
+    margin-bottom: 0px;
+    padding: 0;
+    font-size: 0px;
+    list-style: none;  
 }
+
+.breadcrumbs li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0px;
+}
+
+.breadcrumbs a,
+.breadcrumbs span {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 10px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px solid #adbdb4;
+} 
+
+.breadcrumbs span {
+    border: 0;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
+    color: #ffbc9e;
+    border-bottom: 1px solid #a7a294;
+}
+
+/* Пагинация */
 
 
 /* Стили для ползунка с ценой */

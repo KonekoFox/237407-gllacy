@@ -45,6 +45,10 @@ body {
 
 /* ---------------------------------- Сетка */
 
+.popup {
+    display: none;
+}
+
 .container {
     margin-left: 2.3%;
     margin-right: 2.3%;
@@ -79,6 +83,8 @@ body {
     position: relative;
     width: 265px;
     padding-top: 22px;
+    font-size: 0;
+    text-align: right;
 }
 
 .logo {
@@ -95,15 +101,329 @@ body {
     padding-top: 22px;
 }
 
+    .main-menu {
+        margin: 10px 0;
+        padding: 0;
+        font-size: 0;
+        list-style: none;
+    }
+
+    .cite-section {
+        display: inline-block;
+        position: relative;
+        margin: 0;
+        vertical-align: top;
+    }
+
+    .cite-section > a {
+        padding: 0;
+        margin: 13px;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: none;
+        border-bottom: 1px solid #adbdb4;
+    }
+
+    .main-menu a.active {
+        color: #ffffff;
+        background-color: #d07058;
+    }
+
+    .cite-section > a:hover,
+    .cite-section > a:active,
+    .cite-section > a.active {
+        padding: 8px 13px;
+        margin: 0;
+        color: #333333;
+        text-decoration: none;
+        background-color: #f7f6f3;
+        border: 0;
+        border-radius: 50px;
+    } 
+
+    .cite-section > a:active {
+        box-shadow: inset 0 3px 7px 0 rgba(0, 0, 0, 0.35);
+    }
+
+    .cite-section:hover .popup {
+            display: block;
+        }
+
+    .cite-section > a.active {
+        color: #ffffff;
+        background-color: #d07058;
+    }
+
+        .catalog-menu {
+            position: absolute;
+            top: 27px;
+            left: -6px;
+            width: 143px;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+        }
+
+        .catalog-section {
+            font-weight: normal;
+            background-color: #f8f7f4;
+        }
+
+        .catalog-section a {
+            display: block;
+            padding: 9px 21px 14px 21px;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 16px;
+            color: #323232;
+            text-decoration: none;
+            border-radius: inherit;
+        }
+
+        .catalog-section:first-child a {
+            font-weight: bold;
+            margin: 0 8px;
+            padding: 9px 13px 14px 13px;
+            border-bottom: 1px solid #d1d0ce;
+        }
+
+        .catalog-section:first-child {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .catalog-section:last-child {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .catalog-section:hover {
+            background-color: #fbded7;
+        }
+
+        .catalog-section:active {
+            background-color: #f6b5a5;
+        }
+
+
+
+/* Юзер-блок */
+
+.user-btn {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 10px;
+    height: 32px;
+    line-height: 32px;
+    font-size: 0;
+    font-weight: 600;
+    text-align: left;
+    border-radius: 16px;
+}
+
+.search {
+    width: 32px;
+    text-align: center;
+}
+
+.login {
+    width: 93px;
+}
+
+.cart {
+    width: 117px;
+    margin-right: 0;
+}
+
+.user-link {
+    display: block;
+    width: inherit;
+    border-radius: inherit;
+    padding-left: 16px;
+    line-height: 32px;
+    color: #ffffff;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-color: rgb(157, 177, 165);
+}
+
+.search .user-link {
+    padding-left: 0;
+}
+
+.user-symbol {
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.search-symbol {
+    width: 16px;
+    height: 18px;
+    margin-right: 0;
+}
+
+.login-symbol {
+    width: 20px;
+    height: 19px;
+}
+
+.cart-symbol {
+    width: 21px;
+    height: 20px;
+}
+
+.login span,
+.cart span {
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.active-link {
+    background-color: #f7f6f3;
+}
+
+.active-link span {
+    color: #323232;
+}
+
+    .clickable:hover {
+        background-color: #f8f7f4;
+    }
+
+    .clickable:hover .user-symbol {
+        fill: #373737;
+    }
+
+    .clickable:hover span {
+        color: #e9e8e5;
+    }
+
+    .user-btn:hover .popup {
+        display: block;
+    }
+
+.popup {
+    position: absolute;
+    right: 0;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+
+.user-form {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    text-align: left;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.search-form {
+    width: 341px;
+}
+
+.login-form {
+    width: 277px;
+    padding-bottom: 20px;
+}
+
+.field {
+    width: 100%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 14px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.field:hover {
+    border: 2px solid #c7c6c5;
+}
+
+.field:focus {
+    outline: none;
+    border: 2px solid #8fbdec;
+}
+
+.login-form .btn {
+    margin: 0;
+    margin-right: 20px;
+}
+
+.user-help {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 24px;
+    color: #323232;
+}
+
+.cart-goods {
+    width: 540px;
+    padding: 0 15px 20px 15px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #323232;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+
 .contacts {
     position: absolute;
-    right: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    right: 0px;
+}
+
+.contacts span {
+    font-size: 22px;
+    line-height: 24px;
+}
+
+/* Красные кнопки */
+
+.btn {
+    display: inline-block;
+    margin-top: 0;
+    height: 46px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    line-height: 46px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    border: 0;
+    border-radius: 23px;
+    background: linear-gradient(to top, #e74b36, #f26843);
+    box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
+}
+
+.btn:hover {
+    background: linear-gradient(to top, #ec6f5e, #f58669);
+    box-shadow: 0 1px 2px 0 #ac1000;
+}
+
+.btn:active {
+    background: linear-gradient(to top, #e1613e, #d74531);
+    box-shadow: inset 0 2px 2px 0 #942718;
 }
 
 /* Слайдер */
 
-a.btn {
-    display: block;
+a.slider-btn {
     margin-bottom: 39px;
 }
 
@@ -113,23 +433,76 @@ a.btn {
     margin-bottom: 35px;
 }
 
-.col-2 {
+.banner {
     float: left;
+    position: relative;
     margin-right: 2.3%;
     width: 48.85%;
-    min-height: 180px;
-    padding: 20px 20px 0 20px;
+    min-height: 228px;
+    padding: 20px 20px 20px 20px;
     box-sizing: border-box;
     border-radius: 15px;
 }
 
-.col-2:nth-child(even) {
+.banner:nth-child(even) {
     margin-right: 0;
 }
 
-/* Каталог */
+.banner-btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
 
-/* Каталог на инлайн-блоках */
+.raspberry {
+    background-image: url("../img/raspberry-background.jpg");
+}
+
+.chocolate {
+    background-image: url("../img/chocolate-background.jpg");
+}
+
+.blog {
+    min-height: 220px;
+    background-image: url("../img/strawberry-background.jpg");
+}
+
+.blog span {
+    font-size: 16px;
+    line-height: 22px;
+    color: #323232;
+}
+
+.blog-post {
+    display: block;
+    margin-top: 15px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #323232;
+}
+
+.subscribe {
+    min-height: 220px;
+    padding: 5px;
+    background-image: url(../img/post-background.jpg);
+}
+
+.subscribe-background {
+    padding: 20px 20px 0 20px;
+    min-height: 210px;
+    box-sizing: border-box;
+    color: #5a5a5a;
+    background-color: #f8f7f4;
+    border-radius: inherit;
+}
+
+.subscribe-form .field {
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Каталог */
 
 .catalog {
     font-size: 0;
@@ -142,6 +515,7 @@ a.btn {
     width: 23.275%;
     margin-right: 2.3%;
     margin-bottom: 40px;
+    text-align: center;
 }
 
 .ice-cream:nth-child(4n) {
@@ -151,7 +525,6 @@ a.btn {
 .item-pic {
     position: relative;
     border-radius: 50%;
-    overflow: hidden;
 }
 
 .item-pic img {
@@ -159,32 +532,55 @@ a.btn {
     height: auto;
 }
 
-
-/* Каталог на флоатах */
-/*
-.catalog {
-    margin-left: -1.15%;
-    margin-right: -1.15%;
-    margin-bottom: 35px;
-}
-
-.ice-cream {
-    float: left;
-    position: relative;
-    width: 25%;
-    padding-left: 1.15%;
-    padding-right: 1.15%;
-    box-sizing: border-box;
-}
-
-.item-pic {
+.hit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 61px;
+    height: 61px;
+    background: url(../img/hit.jpg) no-repeat center;
     border-radius: 50%;
     overflow: hidden;
 }
 
-.item-pic img {
-    width: 100%;
-    height: auto;
+.item-price {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.item-price li {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 5px;
+    font-weight: bold;
+    text-shadow: 2px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.price-value {
+    font-size: 45px;
+}
+
+.currency {
+    width: 29px;
+    height: 39px;
+    background: url(../img/rub.svg) no-repeat 0 7px;    
+}
+
+.weight {
+    font-size: 30px;
+}
+
+h3 {
+    display: inline;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal;
+    color: #ffffff;
+    border-bottom: 1px solid #9db1a5;
 }
 
 /* О Глейси */
@@ -217,6 +613,7 @@ a.btn {
 
 .container-map {
     position: relative;
+    background-color: cadetblue;
     overflow: hidden;
     height: 430px;
     background-image: url("../img/map.jpg") no-repeat;
@@ -272,6 +669,10 @@ a.btn {
 .dev-block {
     display: inline-block;
     text-align: left;
+}
+
+.footer-social {
+    font-size: 0;
 }
 
 .footer-info {
@@ -384,162 +785,14 @@ a.btn {
 
 /* Фоны */
 
-.raspberry {
-    background-image: url("../img/raspberry-background.jpg");
-}
-
-.chocolate {
-    background-image: url("../img/chocolate-background.jpg");
-}
-
 .about-gllacy {
     background-image: url("../img/waffle-background.jpg");
 }
 
-.blog {
-    background-image: url("../img/strawberry-background.jpg");
-}
-
-.subscribe {
-    
-}
-
 /* Карточки товаров */
-
-.ice-cream {
-    text-align: center;
-}
-
-h3 {
-    display: inline;
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: normal;
-    color: #ffffff;
-    border-bottom: 1px solid #9db1a5;
-}
-
-.item-price {
-    position: absolute;
-    top: 50%;
-    font-size: 45px;
-    line-height: 45px;
-    font-weight: bold;
-}
-
-.ice-cream span {
-    font-size: 30px;
-}
 
 .undisplayed {
     display: none;
-}
-
-/* Cтили для главного меню */
-
-.main-menu {
-    margin: 10px 0;
-    padding: 0;
-    font-size: 0;
-    list-style: none;
-}
-
-.main-menu > li {
-    display: inline-block;
-    position: relative;
-    margin: 0;
-    vertical-align: top;
-}
-
-.main-menu > li > a {
-    padding: 0;
-    margin: 13px;
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: bold;
-    color: #ffffff;
-    text-decoration: none;
-    border-bottom: 1px solid #adbdb4;
-}
-
-.main-menu a.active {
-    color: #ffffff;
-    background-color: #d07058;
-}
-  
-.main-menu > li > a:hover,
-.main-menu > li > a:active,
-.main-menu > li > a.active {
-    padding: 8px 13px;
-    margin: 0;
-    color: #333333;
-    text-decoration: none;
-    background-color: #f7f6f3;
-    border: 0;
-    border-radius: 50px;
-} 
-
-.main-menu > li > a:active {
-    border-top: 2px solid #696969;
-    padding-top: 6px;
-}
-
-.main-menu > li > a.active {
-    color: #ffffff;
-    background-color: #d07058;
-}
-
-.main-menu .sub-menu {
-    display: none;
-    position: absolute;
-    top: 27px;
-    left: -6px;
-    width: 143px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    background-color: #f8f7f4;
-    border-radius: 5px;
-}
-
-.sub-menu a {
-    display: block;
-    padding: 9px 21px 14px 21px;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 16px;
-    color: #323232;
-    text-decoration: none;
-    border-radius: inherit;
-}
-
-.sub-menu li:first-child a {
-    font-weight: bold;
-    margin: 0 8px;
-    padding: 9px 13px 14px 13px;
-    border-bottom: 1px solid #d1d0ce;
-}
-
-.sub-menu li:first-child {
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-
-.sub-menu li:last-child {
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-.main-menu li:hover .sub-menu {
-    display: block;
-}
-
-.sub-menu li:hover {
-    background-color: #fbded7;
-}
-
-.sub-menu li:active {
-    background-color: #f6b5a5;
 }
 
 /* Хлебные крошки */
@@ -573,7 +826,7 @@ h3 {
 
 /* Стили для ползунка с ценой */
 
-.slider {
+.price-slider {
     position: relative;
     width: 218px;
     height: 36px;
@@ -610,4 +863,21 @@ h3 {
 
 .circle-2 {
     left: 132px;
+}
+
+/* Социальные кнопки футера */
+
+.social-btn {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+    vertical-align: middle;
+    overflow: hidden;
+    background-color: cadetblue;
+}
+
+.social-net {
+    width: 38px;
+    height: 38px;
 }

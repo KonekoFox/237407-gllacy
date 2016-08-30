@@ -102,10 +102,10 @@
                                 </svg>
                             </a>
                             
-                            <div class="popup search-popup">
+                            <div class="search-popup popup">
                                 <form class="user-form search-form" action="#" method="post">
                                     <div class="textfield-style">
-                                        <input class="field" id="search-field" type="text" name="search-field">
+                                        <input class="field" id="search-field" type="text" name="search-field" required>
                                         <label class="input-label" for="#search-field">Что ищем?</label>
                                     </div>
                                 </form>
@@ -124,11 +124,11 @@
                             <div class="popup login-popup">
                                 <form class="user-form login-form" action="#" method="post">
                                     <div class="textfield-style">
-                                        <input class="field" id="login-field" type="text" name="email">
+                                        <input class="field" id="login-field" type="text" name="email" required>
                                         <label class="input-label" for="#login-field">Электронная почта</label>
                                     </div>
                                     <div class="textfield-style">
-                                        <input class="field" id="password-field" type="text" name="password">
+                                        <input class="field" id="password-field" type="text" name="password" required>
                                         <label class="input-label" for="#password-field">Пароль</label>
                                     </div>
                                     <div class="btn-container">
@@ -311,7 +311,7 @@
                                   <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
                                   <form class="subscribe-form clearfix" action="#" method="post">
                                       <div class="textfield-style">
-                                          <input class="field" id="email-field" type="text" name="email">
+                                          <input class="field" id="email-field" type="text" name="email" required>
                                           <label class="input-label" for="email-field">Электронная почта</label>
                                       </div>
                                       <div class="btn-container">
@@ -322,23 +322,24 @@
                           </div>
                       </div>
                   </div>
+              </div>
               
 
               <div class="container-map">
-                  <div class="info">
-                      <p>Адрес главного офиса и<br>офлайн магазина:<br>
-                          <span>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</span>
-                      </p>
-                      <p>Для заказов по телефону:<br>
-                          <span>8 812 450-25-25</span><br>
-                          (с 10 до 20 ежедневно)
-                      </p>
-                      <a class="btn" href="#">Форма обратной связи</a>
+                  <div class="container">
+                      <div class="info">
+                          <p>Адрес главного офиса и<br>офлайн магазина:<br>
+                              <span>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</span>
+                          </p>
+                          <p>Для заказов по телефону:<br>
+                              <span>8 812 450-25-25</span><br>
+                              (с 10 до 20 ежедневно)
+                          </p>
+                          <a class="btn feedback-form" href="#">Форма обратной связи</a>
+                      </div>
                   </div>
               </div>
-                  
-            </div>
-      </main>
+          </main>
           
           <footer class="main-footer">
               <div class="container">
@@ -404,15 +405,15 @@
               <h3>Мы обязательно вам ответим!</h3>
               <form class="modal-content-form" action="#" method="post">
                   <div class="textfield-style">
-                      <input class="field" id="name-field" type="text" name="name">
+                      <input class="field" id="name-field" type="text" name="name" required>
                       <label class="input-label" for="#name-field">Как вас зовут?</label>
                   </div>
                   <div class="textfield-style">
-                      <input class="field" id="email-field" type="text" name="email">
+                      <input class="field" id="email-field" type="text" name="email" required>
                       <label class="input-label" for="#email-field">Ваша почта для ответа?</label>
                   </div>
                   <div class="textfield-style">
-                      <textarea class="field" id="message-field" type="text" name="message" rows="5"></textarea>
+                      <textarea class="field" id="message-field" type="text" name="message" rows="5" required></textarea>
                       <label class="input-label" for="#message-field">Напишите что-нибудь...</label>
                   </div>
                   <div class="btn-container">
@@ -423,6 +424,24 @@
           <div class="modal-overlay"></div>
           
       </div>
+      <script>
+          var link = document.querySelector(".feedback-form");
+          var popup = document.querySelector(".modal-content");
+          var close = document.querySelector(".modal-content-close");
+          var overlay = document.querySelector(".modal-overlay");
+          
+          link.addEventListener("click", function(event) {
+              event.preventDefault();
+              popup.classList.add("modal-content-show");
+              overlay.classList.add("modal-overlay-show");
+          });
+          
+          close.addEventListener("click", function(event) {
+              event.preventDefault();
+              popup.classList.remove("modal-content-show");
+              overlay.classList.remove("modal-overlay-show");
+          });
+      </script>
       
   </body>
 </html>

@@ -58,9 +58,9 @@
           <header class="homepage-header">
               <div class="container">
                   <div class="row clearfix">
-                      <div class="nav-block clearfix">
+                      <div class="navigation-block clearfix">
                           <a class="logo">
-                              <img src="img/Logo.svg" width="154" height="64" alt="Gllacy-shop">
+                              <img src="img/Logo.svg" width="153.094" height="63.25" alt="Gllacy-shop">
                           </a>
                           <nav class="main-navigation">
                               <ul class="main-menu">
@@ -88,7 +88,7 @@
                                       <a href="#">Доставка и оплата</a>
                                   </li>
                                   <li class="site-section">
-                                      <a href="#">О компании</a>
+                                      <a href="#">О Компании</a>
                                   </li>
                               </ul>
                           </nav>
@@ -254,7 +254,7 @@
                                   <ul class="item-price">
                                       <li class="price-value">415</li>
                                       <li class="currency"></li>
-                                      <li class="weight">/кг</li>
+                                      <li class="weight">/ кг</li>
                                   </ul>
                               </div>
                               <h3 class="article-title">Сливочное крем-брюле с карамельной подливкой</h3>
@@ -269,7 +269,7 @@
 
                   <div class="row">
                       <div class="about-gllacy">
-                          <h1>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
+                          <h1>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
                           <div class="features-block clearfix">
                               <div class="feature">
                                   <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
@@ -328,13 +328,16 @@
               <div class="container-map">
                   <div class="container">
                       <div class="info">
-                          <p>Адрес главного офиса и<br>офлайн магазина:<br>
-                              <span>ул. Большая Конюшенная<br>19/8, Санкт-Петербург</span>
-                          </p>
-                          <p>Для заказов по телефону:<br>
-                              <span>8 812 450-25-25</span><br>
-                              (с 10 до 20 ежедневно)
-                          </p>
+                          <div class="location">
+                              <p>Адрес главного офиса и<br>офлайн магазина:</p>
+                              <p class="address">ул. Большая Конюшенная<br>19/8, Санкт-Петербург
+                              </p>
+                          </div>
+                          <div class="tel">
+                              <p>Для заказов по телефону:</p>
+                              <p class="tel-number">8 812 450-25-25</p>
+                              <p>(с 10 до 20 ежедневно)</p>
+                          </div>
                           <a class="btn feedback-form" href="#">Форма обратной связи</a>
                       </div>
                   </div>
@@ -424,6 +427,7 @@
           <div class="modal-overlay"></div>
           
       </div>
+      
       <script>
           var link = document.querySelector(".feedback-form");
           var popup = document.querySelector(".modal-content");

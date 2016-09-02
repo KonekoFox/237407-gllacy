@@ -58,7 +58,7 @@
           <header class="innerpage-header">
               <div class="container">
                   <div class="row clearfix">
-                      <div class="nav-block clearfix">
+                      <div class="navigation-block clearfix">
                           <a class="logo" href="index.html">
                         <img src="img/Logo.svg" width="154" height="64" alt="Gllacy-shop">
                     </a>
@@ -71,7 +71,7 @@
                                               <a href="#">Новинки</a>
                                           </li>
                                           <li class="catalog-section">
-                                            <a class="active">Сливочное</a>
+                                            <a class="current">Сливочное</a>
                                           </li>
                                           <li class="catalog-section">
                                               <a href="#">Щербеты</a>
@@ -88,7 +88,7 @@
                                       <a href="#">Доставка и оплата</a>
                                   </li>
                                   <li class="site-section">
-                                      <a href="#">О компании</a>
+                                      <a href="#">О Компании</a>
                                   </li>
                               </ul>
                           </nav>
@@ -143,15 +143,17 @@
 
                     <div class="user-btn cart">
                         <a class="user-link active-link">
-                            <svg class="user-symbol cart-symbol">
+                            <!--<svg class="user-symbol cart-symbol">
                                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cart"></use>
-                            </svg>
+                            </svg>-->
                             <span>2 товара</span>
                         </a>
                           <div class="popup cart-popup">
                               <table class="cart-table">
                                   <tr>
-                                      <td class="cart-delete"></td>
+                                      <td class="btn-delete">
+                                          <button class="cart-item-delete" type="button" title="Закрыть">Удалить</button>
+                                      </td>
                                       <td class="cart-item-pic">
                                           <div class="cart-pic">
                                               <img src="img/1.png" width="30" height="30" alt="">
@@ -162,7 +164,9 @@
                                       <td class="cart-item-price">300 руб.</td>
                                   </tr>
                                   <tr>
-                                      <td class="delete"></td>
+                                      <td class="btn-delete">
+                                          <button class="cart-item-delete" type="button" title="Закрыть">Удалить</button>
+                                      </td>
                                       <td>
                                           <div class="cart-pic">
                                               <img src="img/3.png" width="30" height="30" alt="">
@@ -206,6 +210,8 @@
                       </ul>
                       <h1>Сливочное мороженое</h1>
 </div>
+                  </div>
+                  <div class="row">
                       <div class="filters-block">
                       <form action="#" method="post" name="filters-form" class="clearfix">
                           <div class="filter sort">
@@ -272,7 +278,8 @@
                           </div>
                       </form>
                       </div>
-                      
+                  </div>
+                  <div class="row">
                       <div class="catalog">
                       <article class="ice-cream">
                           <div class="item-pic">
@@ -469,7 +476,8 @@
                           </div>
                       </article>
                       </div>
-                      
+                  </div>
+                  <div class="row">
                       <div class="pagination">
                           <ul class="pagination-list">
                               <li class="paginator-prev" disabled>

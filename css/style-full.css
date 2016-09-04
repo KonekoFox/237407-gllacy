@@ -546,6 +546,7 @@ body > input[type="radio"] {
     font-weight: 400;
     color: #323232;
     background-color: #f8f7f4;
+    box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4); 
     border-radius: 5px;
 }
 
@@ -1113,7 +1114,6 @@ h3 {
     
     font-size: 24px;
     line-height: 30px;
-    /*word-spacing: 1px;*/
     color: #323232;
 }
 
@@ -1161,6 +1161,7 @@ h3 {
 
 .container-map iframe {
     position: absolute;
+    width: 100%;
 }
 
 .container-map .container {
@@ -1173,7 +1174,7 @@ h3 {
     right: 2.3%;
     
     width: 262px;
-    height: 265px;
+    min-height: 265px;
     padding-top: 15px;
     padding-left: 25px;
     padding-right: 15px;
@@ -1742,7 +1743,7 @@ input[type="checkbox"]:checked:disabled:hover + .checkbox-indicator:after {
 .filling input[type="submit"] {
     display: inline-block;
     vertical-align: middle;
-    height: 36px;
+    min-height: 36px;
     padding: 0 28px;
     box-sizing: border-box;
     
@@ -1856,7 +1857,7 @@ input[type="checkbox"]:checked:disabled:hover + .checkbox-indicator:after {
     margin-left: -238px;
     
     width: 477px;
-    height: 442px;
+    min-height: 442px;
     padding: 25px;
     padding-top: 15px;
     padding-left: 24px;

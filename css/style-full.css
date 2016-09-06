@@ -13,6 +13,36 @@ body > input[type="radio"] {
     display: none;
 }
 
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-cart-full {
+    width: 21px;
+    height: 20px;
+    background-position: -5px -5px;
+}
+
+.sprite-hit {
+    width: 61px;
+    height: 61px;
+    background-position: -5px -35px;
+}
+
+.sprite-pag1 {
+    width: 9px;
+    height: 14px;
+    background-position: -5px -106px;
+}
+
+.sprite-pag2 {
+    width: 9px;
+    height: 14px;
+    background-position: -5px -130px;
+}
+
 .site-wrapper {
     background-repeat: no-repeat;
     background-position: top center;
@@ -306,7 +336,7 @@ body > input[type="radio"] {
 .user-symbol {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 7px;
+    margin-right: 8px;
     
     fill: #fefefe;
     fill-rule: evenodd;
@@ -335,8 +365,19 @@ body > input[type="radio"] {
 }
 
 .active-link {
-    padding-left: 44px;
-    background: url(../img/cart-full.png) no-repeat 16px center #f7f6f3;
+    padding-left: 43px;
+    background-color: #f7f6f3;
+}
+
+.active-link::before {
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 7px;
+    width: 21px;
+    height: 20px;
+    background: url(../img/spritesheet.png) -5px -5px no-repeat;
+    
 }
 
 .active-link span {
@@ -815,7 +856,7 @@ body > input[type="radio"] {
 /* Баннеры, первый ряд (до каталога) */
 
 .banner-row {
-    margin-bottom: 40px;
+    margin-bottom: 41px;
 }
 
 .banner {
@@ -852,6 +893,7 @@ body > input[type="radio"] {
 .raspberry p,
 .chocolate p {
     margin-top: 15px;
+    margin-bottom: 0;
     
     font-size: 17px;
     line-height: 22px;
@@ -866,7 +908,7 @@ body > input[type="radio"] {
 
 .raspberry {
     background-color: #b7001d;
-    background-image: url("../img/raspberry-background.jpg");
+    background: url("../img/raspberry-background.jpg");
 }
 
 .chocolate {
@@ -922,6 +964,10 @@ body > input[type="radio"] {
     color: #5a5a5a;
     background-color: #f8f7f4;
     border-radius: inherit;
+}
+
+.subscribe-background p {
+    margin-bottom: 0;
 }
 
 .subscribe-form {
@@ -982,7 +1028,7 @@ body > input[type="radio"] {
     width: 23.275%;
     min-height: 290px;
     margin-right: 2.3%;
-    margin-bottom: 33px;
+    margin-bottom: 32px;
     
     text-align: center;
 }
@@ -1014,7 +1060,7 @@ body > input[type="radio"] {
     height: 61px;
     
     background-color: #ffffff;
-    background: url(../img/hit.jpg) no-repeat center;
+    background: url(../img/spritesheet.png) -5px -35px no-repeat;
     border-radius: 50%;
     overflow: hidden;
     z-index: 0;
@@ -1260,7 +1306,7 @@ h3 {
 
 .footer-social {
     font-size: 0;
-    margin-top: 18px;
+    margin-top: 20px;
 }
 
 .footer-info {
@@ -1285,6 +1331,7 @@ h3 {
 .footer-info-link {
     position: relative;
     padding-left: 16px;
+    margin-bottom: 5px;
 }
 
 .marked a {
@@ -1780,8 +1827,8 @@ input[type="checkbox"]:checked:disabled:hover + .checkbox-indicator:after {
 /* Пагинация */
 
 .pagination {
-    margin-top: 37px;
-    margin-bottom: 28px;
+    margin-top: 39px;
+    margin-bottom: 31px;
     
     text-align: right;
 }
@@ -1838,17 +1885,17 @@ input[type="checkbox"]:checked:disabled:hover + .checkbox-indicator:after {
     vertical-align: middle;
     width: 10px;
     height: 14px;
-    padding: 8px 0;
+    /*padding: 8px 0;*/
     margin-right: 10px;
     
-    background: url(../img/pag1.png) no-repeat center;
+    background: url(../img/spritesheet.png) -5px -106px no-repeat;
 }
 
 .paginator-next a {
     margin-left: 15px;
     margin-right: 0;
     
-    background: url(../img/pag2.png) no-repeat center;
+    background: url(../img/spritesheet.png) -5px -130px no-repeat;
 }
 
 /* Модальное окошко "Форма обратной связи" */
